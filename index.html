@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris Benjamin's Portfolio</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" href="./css/cover.css">
+    <style>
+        .brand {
+            font-family: 'Exo 2';
+            color: var(--bs-warning);
+        }
+        ul, li, a {
+            font-family: 'Exo 2'!important;
+            font-size: 1.2rem;
+            color: var(--bs-warning) !important;
+        }
+        a:hover {
+            color: #98681F!important;
+        }
+
+        h1, h2 {
+            font-family: 'Exo 2';
+            color: var(--bs-warning);
+        }
+        h3, h4, h5, h6, a{
+            font-family: 'Montserrat';
+            color: var(--bs-body-color);
+        }
+        p {
+            font-family: 'Source Sans 3';
+        }
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28224, 175, 104, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+        }
+        .navbar-toggler {
+            border-color: #E0AF68;
+        }
+        .card-img-top {
+            height: 200px; 
+            object-fit: cover; 
+            object-position: center; 
+        }
+        .card {
+            height: 100%;
+            border-color: var(--bs-body-color);
+            background-color: var(--bs-body-color);
+            color: var(--bs-body-bg);
+        }
+        .img-fit {
+            height: 300px;
+            object-fit: cover;
+            object-position: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <header class="container-fluid d-flex flex-row w-100 vh-100 p-3 mx-auto flex-column" style="background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url('./img/textured_bg.jpg'); background-size:cover;">
+        <nav class="navbar navbar-expand-md border-bottom" style="border-color: var(--bs-body-color)">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" area-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" style="color: var(--bs-warning);"></span>
+                </button>
+                <h3 class="brand px-2 py-1 fw-bold fs-2">Chris Benjamin</h3>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar">
+                    <div class="container mx-0">
+                        <ul class="navbar-nav mb-w mb-sm-0 justify-content-end" style="font-family:'Exo 2';">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#experiments">Experiments</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#collaborative-projects">Collaborations</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#featured-cases">Featured</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container px-3 text-center mb-auto mt-auto">
+            <h1>From Design Experiments to Full-Scale Case Studies.</h1>
+            <h3 class="fw-normal mb-3">A collection of digital work by Chris Benjamin.</h3>
+            <a href="#experiments" class="btn btn-secondary px-4 py-2 fs-5" role="button">Take a Look</a>
+        </div>
+    </header>
+    <main class="container-fluid pt-5">
+        <section id="experiments">
+            <div class="row">
+                <div class="col d-flex flex-column justify-content-center text-center border-bottom my-4">
+                    <div>
+                        <h3>Design and Code Experiments</h3>
+                        <p class="lead">A collection of technical sketches and modular builds where I test HTML structure and interactive CSS techniques.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mx-5">
+                <div class="col-md-4 d-flex align-items-stretch mb-2">
+                    <div class="card w-100">
+                        <img class="card-img-top" src="/practice_activity1/screenshots/screenshot_pa1.png" alt="Screenshot of a basic HTML only site">
+                        <div class="card-body">
+                            <h5 class="card-title">Basic HTML Structure</h5>
+                            <p class="card-text">
+                                A basic website to get the hang of structuring HTML and how to utilize elements and tags.
+                            </p>
+                            <a href="./practice_activity1/pa1.html" class="btn btn-secondary px-4 py-2 fs-5" role="button">Visit Site</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex align-items-stretch mb-2">
+                    <div class="card w-100">
+                        <div>
+                            <img class="card-img-top" src="/practice_activity2/screenshots/screenshot_pa2.png" alt="Screenshot of website">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">CSS Grid, Transforms, and Filters</h5>
+                            <p class="card-text">
+                                Website built using CSS Grid and applying different transforms and filters.
+                            </p>
+                            <a href="./practice_activity2/pa2.html" class="btn btn-secondary px-4 py-2 fs-5" role="button">Visit Site</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex align-items-stretch mb-2">
+                    <div class="card w-100">
+                        <div>
+                            <img class="card-img-top" src="/practice_activity3/screenshots/screenshot_pa3.png" alt="Screenshot of a basic HTML only site">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Customized Bootstrap Example</h5>
+                            <p class="card-text">
+                                A website built using a few customized Bootstrap examples to redesign a previous experiment.
+                            </p>
+                            <a href="./practice_activity3/pa3.html" class="btn btn-secondary px-4 py-2 fs-5" role="button">Visit Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section  id="collaborative-projects">
+            <div class="container mt-5 mb-5 pt-5 text-center">
+                <div class="row border-bottom">
+                    <h3>Collaborative Projects</h3>
+                    <p class="lead">Projects showcasing a collaborative process to styling websites with CSS and applying logice with Javascript.</p>
+                </div>
+                <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3 mt-3">
+                    <div class="flex-fill text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                        <div class="my-3 py-3">
+                            <h2 class="display-5">CSS Styles</h2>
+                            <p class="lead">Using CSS to make a mock business website.</p>
+                            <a href="./partner_lab1/pl1.html" class="btn btn-warning px-4 py-2 fs-5" role="button" style="color: var(--bs-secondary)!important;">Visit Site</a>
+                        </div>
+                        <div class="bg-body-tertiary shadow-sm mx-auto" style="width:90%; height: 300px; border-radius: 21px 21px 0 0; background-image: url('/partner_lab1/screenshots/index_screenshot.png'); background-size:cover; background-position: -40px 0px;"></div>
+                    </div>
+                    <div class="flex-fill bg-body-tertiary me-md-3 pt-3 pc-3 pt-md-5 px-md-5 text-center overflow:hidden">
+                        <div class="my-3 p-3">
+                            <h2 class="display-5" style="color: var(--bs-secondary);">Javascript Logic</h2>
+                            <p class="lead" style="color: var(--bs-secondary);">Applying logic to HTML and CSS with Javascript.</p>
+                            <a href="./partner_lab2/pl2.html" class="btn btn-secondary px-4 py-2 fs-5" role="button">Visit Site</a>
+                        </div>
+                        <div class="bg-dark shadow-sm mx-auto" style="width: 90%; height: 300px; border-radius: 21px 21px 0 0; background-image: url('/partner_lab2/screenshots/screenshot_pl2.png'); background-size:cover; background-position: -90px 0px;">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section  id="featured-cases">
+            <div class="container-fluid bg-secondary">
+                <div class="row text-center pt-3">
+                    <h2>Featured Case Studies</h2>
+                    <p class="lead">A demonstration of complete, functional websites using modern frameworks.</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 m-0 p-0" style="height: 400px">
+                        <div class="h-100" style="background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url('./individual_assignment1/screenshots/screenshot1.png'); background-size:cover;"></div>
+                    </div>
+                    <div class="col-md-6 my-0 px-3 p-0" style="height: 380px" id="ia2">
+                        <div style="height: 20px;"><h6 style="color: var(--bs-primary)">HTML</h6></div>
+                        <div class="d-flex flex-column h-100 justify-content-center">
+                            <h3>Beginner E-Commerce</h3>
+                            <h5>Simple website utilizing HTML only.</h5>
+                            <a href="./individual_assignment1/ia1.html" class="btn btn-outline-warning px-4 py-2 fs-5" role="button">Visit Site</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 my-0 px-3 pt-2" style="height: 380px">
+                        <div style="height: 20px;"><h6 style="color: var(--bs-primary)">HTML | CSS</h6></div>
+                        <div class="d-flex flex-column h-100 justify-content-center">
+                            <h3>CSS Styling and Transitions</h3>
+                            <h5>A fictional record store site using CSS to style and animate.</h5>
+                            <a href="./individual_assignment2/ia2.html" class="btn btn-outline-warning px-4 py-2 fs-5" role="button">Visit Site</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 m-0 p-0" style="height: 400px">
+                        <div class="h-100" style="background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url('./individual_assignment2/screenshots/screenshot1.png'); background-size:cover;"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 m-0 p-0" style="height: 400px">
+                        <div class="h-100" style="background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url('./individual_assignment3/screenshots/screenshot1.png'); background-size:cover;"></div>
+                    </div>
+                    <div class="col-md-6 my-0 px-3 pt-2" style="height: 380px">
+                        <div style="height: 20px;"><h6 style="color: var(--bs-primary)">HTML | CSS</h6></div>
+                        <div class="d-flex flex-column h-100 justify-content-center">
+                            <h3>Responsive Website w/ CSS</h3>
+                            <h5>A restaurant menu gallery utilizing CSS to make the site responsive.</h5>
+                            <a href="./individual_assignment3/ia3.html" class="btn btn-outline-warning px-4 py-2 fs-5" role="button">Visit Site</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 my-0 px-3 pt-2" style="height: 380px">
+                        <div style="height: 20px;"><h6 style="color: var(--bs-primary)">HTML | CSS | JS</h6></div>
+                        <div class="d-flex flex-column h-100 justify-content-center">
+                            <h3>4th Project Coming Soon!</h3>
+                            <h5>A MVP (minimal viable product) for a procurement consulting business.</h5>
+                            <a href="./individual_assignment4/ia4.html" class="btn btn-outline-warning px-4 py-2 fs-5" role="button" disabled>Visit Site</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 m-0 p-0" style="height: 400px">
+                        <div class="h-100" style="background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url('./individual_assignment4/screenshots/coming-soon.jpg'); background-size:cover;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="container-fluid">
+        <div class="container-fluid bg-body-primary bg-gradient">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5">
+                <div class="col mb-3">
+                    <p class="text-body-secondary">&copy 2026 Chris Benjamin</p>
+                    <p class="text-body-secondary">Email: <a href="mailto:cmb8728@psu.edu">cmb8728@psu.edu</a></p>
+                </div>
+                <div class="col mb-3"></div>
+                <div class="col mb-3">
+                    <h5>Featured Case Studies</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a href="./individual_assignment1/ia1.html" class="nav-link p-0 text-body-secondary">Beginner E-Commerce</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="./individual_assignment2/ia2.html" class="nav-link p-0 text-body-secondary">CSS Styling and Transitions</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="./individual_assignment3/ia3.html" class="nav-link p-0 text-body-secondary">Responsive Website w/ CSS</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="./individual_assignment4/ia4.html" class="nav-link p-0 text-body-secondary">4th Project Coming Soon!</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col mb-3">
+                    <h5>Collaborative Projects</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a href="./partner_lab1/pl1.html" class="nav-link p-0 text-body-secondary">CSS Styles</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="./partner_lab2/pl2.html" class="nav-link p-0 text-body-secondary">Javascript Logic</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col mb-3">
+                    <h5>Design and Code Experiments</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a href="./practice_activity1/pa1.html" class="nav-link p-0 text-body-secondary">Basic HTML Structure</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="./practice_activity2/pa2.html" class="nav-link p-0 text-body-secondary">CSS Grid, Transforms, and Filters</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="./practice_activity3/pa3.html" class="nav-link p-0 text-body-secondary">Customzied Bootstrap Example</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

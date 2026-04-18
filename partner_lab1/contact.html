@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Aurora Procurement Solutions - Contact</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="Gradient_Logo.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300..1000&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="#"><img src="./img/Gradient_Logo.png" alt="Aurora Procurement Solutions Logo" width="75px">
+                <span>Aurora Procurement Solutions</span>
+                </a>
+            </div>
+            <ul>
+                <li><a href="../partner_lab1/pl1.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+        <section class="contact-form">
+            <h1>Looking forward to working together!</h1>
+            <form action="contact.html" method="POST">
+                <p>
+                    <label for="fname">First Name:</label>
+                    <input type="text" name="fname" id="first_name">
+                </p>
+                <p>
+                    <label for="lname">Last Name:</label>
+                    <input type="text" name="lname" id="last_name">
+                </p>
+                <p>
+                    <label for="co-name">Company Name:</label>
+                    <input type="text" name="co-name" id="co-name">
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                </p>
+                <fieldset>
+                    <legend>Services you are interested in</legend>
+                    <p>
+                        <input type="checkbox" name="service1" id="service1">
+                        <label for="service1">Process Optimization</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="service2" id="service2">
+                        <label for="sevice2">Sourcing</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="service3" id="service3">
+                        <label for="service3">Vendor Relationship Management</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="service4" id="service4">
+                        <label for="service4">Spend Analysis & Cost Reduction</label>
+                    </p>
+
+                </fieldset>
+                <p>
+                    <label for="details">Additional Details:</label>
+                    <textarea name="details"></textarea>
+                </p>
+                <p>
+                    <input type="submit">
+                </p>
+
+            </form>
+        </section>
+        <footer>
+            <p>&copy; Chris Benjamin, 2025 </p>
+        </footer>        
+    </body>

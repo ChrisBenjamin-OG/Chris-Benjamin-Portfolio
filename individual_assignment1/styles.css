@@ -1,0 +1,91 @@
+*{
+    background-color:burlywood;
+}
+h1 {
+    text-align: center;
+}
+section{
+    width:60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+section h2{
+    text-align: center;
+}
+.about{
+    min-height: 500px;
+}
+#about-img {
+    float: right;
+    margin-left: 10px;
+}
+.about-div{
+    margin: 50px 10px;
+}
+.details{
+    min-height: 250px;
+}
+#cards{
+    display:inline-block;
+    width:27%;
+    margin: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    border: 5px double black;
+    border-radius: 10px;
+    background-color: white;
+}
+#cards:hover{
+    box-shadow: 5px 4px 8px white;
+}
+#cards h3, #cards h4{
+    text-align: center;
+    background-color: white;
+    color: red;
+}
+#cards img{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#cards p, #cards a, #cards h2{
+    background-color:white;
+    text-align:right;
+    text-decoration: none;
+}
+#cards h2:hover{
+    text-decoration: underline;
+}
+.card-detail {
+    display: inline-block;
+    border: 10px solid black;
+    border-radius: 25px;
+}
+.card-detail h1{
+    text-align:left;
+}
+.card-detail img{
+    float:left;
+    margin: 25px;
+}
+#cost-white{
+    color: white;
+    font-weight: bold;
+}
+#cost-blue{
+    color: aqua;
+    font-weight: bold;
+}
+#cost-black{
+    color: black;
+    font-weight: bold;
+}
+#cost-red{
+    color: red;
+    font-weight: bold;
+}
+#cost-green{
+    color: green;
+    font-weight: bold;
+}

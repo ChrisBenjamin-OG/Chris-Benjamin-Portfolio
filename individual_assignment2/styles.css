@@ -1,0 +1,283 @@
+:root {
+    font-family: Calibri;
+    --bg-color: #FFFECB;
+    --font-color: #000009;
+    --action-color: #FF2E00;
+    --hover-color: #FEA82F;
+    --accent-color: #5448C8;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background: var(--bg-color);
+    color: var(--font-color);
+}
+/** This creates a max-width container to keep content from stretching too wide. **/
+.featured{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    padding-bottom: 150px;
+}
+
+h1,h2{
+    border-bottom: 2px solid var(--action-color);
+    color: var(--font-color);
+}
+
+/**This is to create the horizontal flexbox for featured albums**/
+.featured-card-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/**Style the card **/
+.featured-card{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 12px;
+    cursor:pointer;
+    transition: all .1s ease-in-out;
+
+}
+
+.featured-card:hover {
+    transform: translateY(100px) scale(1.5,1.5);
+    z-index: 1;
+}
+
+.featured-card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+}
+
+.featured-card-img img{
+    width: 200px;
+    height: 200px;
+}
+
+.featured-card-details { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+    /* Make the details invisible */
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+
+.featured-card-details p {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    margin-left: 10px;
+
+}
+
+.featured-card:hover .featured-card-details{
+    opacity: 1;
+    
+}
+
+.featured-card-album {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.featured-card-artist { 
+    font-size: 20px;
+}
+
+.featured-card-price {
+
+    font-size: 16px; 
+    color: var(--action-color);
+    padding-bottom: 5px;
+    text-align:right;
+    font-weight: bold;
+}
+
+.inventory {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+
+}
+
+table {
+    width:1080px;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+td {
+    border-bottom: 1px solid var(--font-color);
+    padding-left: 5px;
+}
+
+tr:nth-child(even){
+    background-color: var(--bg-color);
+}
+
+tr:hover {
+    background-color: var(--hover-color);
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 5px;
+    text-align: left;
+    background-color: var(--font-color);
+    color: var(--bg-color);
+    border-bottom: 2px solid var(--action-color);
+}
+
+caption {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.navbar {
+    padding-bottom: 0px;
+    background: var(--font-color);
+    border-bottom: 2px solid var(--action-color);
+    
+}
+
+.navbar nav, footer{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+
+.navbar nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+
+#brand {
+    font-family: "Chango";
+    font-size: 24px;
+    font-style: bold;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+}
+
+#navlinks {
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+li {
+    padding: 5px 10px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--bg-color);
+}
+
+a:hover {
+    color: var(--hover-color);
+}
+
+footer {
+    background: var(--bg-color);
+    width: 1200px;
+    border-top: 2px solid var(--action-color);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+}
+
+.footer-content p {
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+}
+
+.footer-content p a{
+    color: var(--font-color);
+    font-size: 24px;
+}
+.footer-content p a:hover {
+    color:#FF2E00;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+.about-container img {
+    width: 100%;
+    margin:auto;
+    opacity: .4;
+}
+
+.about-content {
+    max-width: 1200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: auto 20px;
+}
+
+#dna {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.about-content img {
+    width: 250px;
+    float: right;
+    margin-top: 40px;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 40px;
+  background-color: rgb(235, 253, 255);
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding-bottom: 10px;
+}
+
+h1, h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+#todo-list {
+  list-style: none;
+  counter-reset: todo-item;
+  padding: 0;
+  max-width: 100%;
+  border: 1px solid black;
+  border-radius: 2.5px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+#todo-list.reset-count {
+  counter-reset: todo-item 0;
+}
+
+#addTodo {
+  width: 75%;
+  margin-right: 10px;
+}
+
+li button{
+  width: 100%;
+  padding: 10px;
+  border: none; 
+  counter-increment: todo-item;
+  background-color: white;
+  margin-top: 0px;
+  text-align: left;
+}
+
+li button:hover {
+  background-color: lightgray;
+}
+
+li button::before{
+  content: counter(todo-item);
+  margin-right: 5px;
+  padding-right: 5px;
+  font-weight: bold;
+  border-right: 1px solid lightgray;
+}
+
+li button:hover::before {
+  border-right: 1px solid black;
+}
+
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Interactive Custom Page</title>
+    <!--Link to CSS-->
+    <link rel="stylesheet" href="styles.css" />
+    <!--Link to JavaScript-->
+    <script src="script.js" defer></script>
+    <style>
+        .portfolio-link{
+            color: #24283B;
+            background-color: #E0AF68;
+            padding: 10px 5px;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            z-index: 1;
+            margin: 5px;
+            font-family: 'Calibri';
+            font-weight: bold;
+            font-size:larger;
+            border: 1px solid #E0AF68;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+        .portfolio-link:hover {
+            color: #E0AF68;
+            background-color: #24283B;
+            border: 1px solid #24283B;
+        }
+    </style>
+  </head>
+
+  <body>
+    <a class="portfolio-link" href="javascript:history.back()">Back to Portfolio</a>
+    <!--Customization controls-->
+    <div class="container">
+      <h1 id="greeting">Hello User!</h1>
+      <p id="message">Welcome to our interactive page!</p>
+      <form>
+        <label for="nameInput">Your Name:</label>
+        <input type="text" id="nameInput" placeholder="Enter your name" />
+
+        <label for="messageInput">Your Message:</label>
+        <input type="text" id="messageInput" placeholder="Enter a message" />
+
+        <label for="bgColor">Background Color:</label>
+        <select id="bgColor">
+          <option value="white">White</option>
+          <option value="lightblue">Light Blue</option>
+          <option value="lightpink">Light Pink</option>
+          <option value="lightgreen">Light Green</option>
+        </select>
+
+        <button onClick="applyChanges()" type="button" id="applyBtn">Apply Changes</button>
+      </form>
+    </div>
+    <hr>
+    <div class="container">
+      <h2>To Do List</h2>
+      <label for="addTodo">Add a task or click task to complete.</label>
+      <input type="text" name="addTodo" id="addTodo">
+      <button onclick="addTask()" id="addTask">Add Task</button>
+      <ol id="todo-list">
+      </ol>
+
+    </div>
+  </body>
+</html>

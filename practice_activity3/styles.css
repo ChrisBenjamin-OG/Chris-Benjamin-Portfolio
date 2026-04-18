@@ -1,0 +1,63 @@
+.port-link {
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: black;
+    background-color: white;
+}
+
+.logo {
+    font-family: "Exo 2";
+    font-size: 24px;
+    color: #F26430;
+    text-decoration:overline;
+    padding: 5px 0px;
+}
+
+.custom-bg{
+    background-color: #212227; 
+}
+
+.nav {
+    font-family:"Montserrat";
+}
+
+.nav-link {color: #F26430 !important;}
+.nav-link:hover {color: #973d1c !important;}
+
+header {background-color:#212227;}
+
+main {background-color:#212227;}
+
+h1 {
+    font-family: "Montserrat" !important;
+    color:#F26430 !important;
+}
+.lead { color:white;}
+
+.btn-primary { 
+    background-color: #009DDC !important;
+    border: #009DDC !important;}
+.btn-primary:hover{
+    background-color: #00425c !important;
+}
+
+.btn-outline-secondary {
+    color: #009B72 !important;
+    border-color: #009B72 !important;
+}
+.btn-outline-secondary:hover {
+    background-color: #009B72 !important;
+    color:white !important;
+}
+
+h2 {color:#F26430 !important;}
+h3 {color:#F26430 !important;}
+.feature p{ color:white;}
+
+footer p {
+    font-family: "Montserrat" !important;
+    color:#F26430 !important;
+}
+
+p {font-family:"Source Sans 3" !important;}
